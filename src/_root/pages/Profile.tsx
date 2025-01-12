@@ -7,7 +7,6 @@ import { Link, useParams } from "react-router-dom";
 
 const Profile = () => {
   const { id } = useParams();
-  console.log("id", id);
   const { user } = useUserContext();
 
   const { data: currentUser } = useGetUserById(id || "");
